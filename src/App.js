@@ -1,21 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 
-import * as React from 'react';
+import Button from './component/useButton';
+import ButtonGroup from './component/useButtonGroup';
+import SwiperSlide from './component/useSwiperSlide';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <label>
-          Material 3
-          <md-checkbox checked></md-checkbox>
-        </label>
-
-
+      <header >
       </header>
+        <article>
+            <Button/>
+            <ButtonGroup/>
+            <SwiperSlide/>
+        </article>
 
     </div>
 
