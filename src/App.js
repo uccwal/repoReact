@@ -9,6 +9,11 @@ import UseButton from './component/useButton';
 import UseButtonGroup from './component/useButtonGroup';
 import UseSwiperSlide from './component/useSwiperSlide';
 
+import UseAjaxGet from "./component/useAjaxGet";
+import UseAjaxPost from "./component/useAjaxPost";
+
+
+
 
 
 
@@ -23,6 +28,8 @@ import UseBasicPagination from "./component/useBasicPagination";
 
 function App() {
 
+
+
     const [openDrawer, setOpenDrawer] = useState(false);
 
     const handleDrawerOpen = () => {
@@ -32,6 +39,7 @@ function App() {
     const handleDrawerClose = () => {
         setOpenDrawer(false);
     };
+    const data = ['list'];
   return (
     <div className="App">
       <header >
@@ -57,11 +65,11 @@ function App() {
         <Drawer anchor="left" open={openDrawer} onClose={handleDrawerClose}  >
 
             <List sx={{ width: 250}}>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+                {data.map((text, index) => (
                     <ListItem key={text} disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon /> }
                             </ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemButton>
@@ -87,10 +95,13 @@ function App() {
 
 
         <article>
+        <UseAjaxGet/>
             <UseButton/>
             <UseButtonGroup/>
             <UseSwiperSlide/>
             <UseBasicPagination/>
+
+            <UseAjaxPost/>
         </article>
         <UseSpeedDial/>
     </div>
