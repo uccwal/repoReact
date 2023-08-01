@@ -56,7 +56,7 @@ function App() {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    MyApp Main
+                    MyApp Dev
                 </Typography>
             </Toolbar>
         </AppBar>
