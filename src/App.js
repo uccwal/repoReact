@@ -8,23 +8,13 @@ import MailIcon from '@mui/icons-material/Mail';
 import UseButton from './component/useButton';
 import UseButtonGroup from './component/useButtonGroup';
 import UseSwiperSlide from './component/useSwiperSlide';
-
-
 import UseAjaxPost from "./component/useAjaxPost";
-
-
-
-
 import UseSpeedDial from "./component/useSpeedDial";
 import UseBasicPagination from "./component/useBasicPagination";
-
-
 import UseAjaxGet from "./component/useAjaxGet";
 import UseToastGrid from "./component/useToastGrid";
 import UseToastGridAjaxGet from "./component/useToastGridAjaxGet";
-
-
-
+import UseAjaxGetPy from "./component/useAjaxGetPy";
 
 function App() {
 
@@ -95,6 +85,7 @@ function App() {
 
 
         <article>
+            <UseAjaxGetPy/>
             <UseToastGridAjaxGet/>
             <UseAjaxGet/>
             <UseToastGrid/>

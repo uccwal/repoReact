@@ -12,7 +12,7 @@ const UseToastGridAjaxGet = () => {
         try {
             const response = await axios.get('https://jsonplaceholder.typicode.com/posts'); // AJAX 호출
             setData(response.data); // 가져온 데이터를 상태 변수에 저장
-            console.log(response.data);
+            //console.log(response.data);
 
         } catch (error) {
             console.error('Error fetching data:', error);
