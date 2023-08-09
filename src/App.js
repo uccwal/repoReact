@@ -9,19 +9,19 @@ import UseButton from './component/useButton';
 import UseButtonGroup from './component/useButtonGroup';
 import UseSwiperSlide from './component/useSwiperSlide';
 
-import UseAjaxGet from "./component/useAjaxGet";
+
 import UseAjaxPost from "./component/useAjaxPost";
-
-
-
-
-
 
 
 
 
 import UseSpeedDial from "./component/useSpeedDial";
 import UseBasicPagination from "./component/useBasicPagination";
+
+
+import UseAjaxGet from "./component/useAjaxGet";
+import UseToastGrid from "./component/useToastGrid";
+import UseToastGridAjaxGet from "./component/useToastGridAjaxGet";
 
 
 
@@ -95,7 +95,9 @@ function App() {
 
 
         <article>
-        <UseAjaxGet/>
+            <UseToastGridAjaxGet/>
+            <UseAjaxGet/>
+            <UseToastGrid/>
             <UseButton/>
             <UseButtonGroup/>
             <UseSwiperSlide/>
